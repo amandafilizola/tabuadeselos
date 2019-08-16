@@ -1,0 +1,49 @@
+.botoes {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 100%;
+}
+.botao {
+    width: 50%;
+    height: 100%;
+    border:none;
+    color:white;
+    font-size: 25px;
+}
+.mais {
+    background-color: green;
+    border:none;
+}
+.menos {
+    background-color:grey;
+}
+.delete {
+    background-color: red;
+    width: 50%;
+    height: 40px;
+    border:none;
+    color:white;
+    font-size: 20px;
+    border-radius:10px;
+}
+.container .card p .novoAluno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+}
+.cardsContainer .novoAluno input{
+    margin:10px;
+    height:30px;
+}
+.cardsContainer .novoAluno button{
+    margin:10px;
+    background-color: green;
+    width: 50%;
+    height: 40px;
+    border:none;
+    color:white;
+    font-size: 20px;
+    border-radius:10px;
+}

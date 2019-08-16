@@ -9,5 +9,5 @@ const router = express.Router();
 router.get('/alunos',AlunoController.index);
 router.post('/alunos', AlunoController.store);
 router.put('/alunos/:name/', AlunoController.update);
-router.delete('/alunos/:name/', AlunoController.delete);
+router.delete('/alunos', AlunoController.delete);
 module.exports = router;
