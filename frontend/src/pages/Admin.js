@@ -15,32 +15,33 @@ export default function Admin() {
         }
         loadAlunos();
     }, []);
+
     async function refresh() {
         const response = await api.get('/alunos');
         setUsers(response.data);
     }
+
     async function handlePlus(user, property) {
         if(user[property] >= 5){
             return;
         }
         user[property]++;
         await api.put(`/alunos/${user.name}`, user);
-        const response = await api.get('/alunos');
-        setUsers(response.data);
+        refresh();
     }
+
     async function handleMinus(user, property) {
         if(user[property] <= 0){
             return;
         }
         user[property]--;
         await api.put(`/alunos/${user.name}`, user);
-        const response = await api.get('/alunos');
-        setUsers(response.data);
+        refresh();
     }
+    
     async function handleDelete(user) {
         await api.delete('/alunos',{data:{name: user.name}})
-        const response = await api.get('/alunos');
-        setUsers(response.data);
+        refresh();
     }
 
     async function handleCreate() {
