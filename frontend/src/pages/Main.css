@@ -1,0 +1,70 @@
+.container {
+    width: 100%;
+    padding: 50px;
+    background-color: #6dbaa6;
+    font-family: 'Comic Sans MS';
+    font-family: 'Courier New';
+}
+.container p {
+    text-align: center;
+    font-family: 'Courier New';
+}
+.container h1{
+    font-size:45px;
+}
+.container p, .container h1 {
+    background-color: #e3e8e7;
+    padding: 15px 0;
+}
+.container .subtitle {
+    color: orange;
+    font-size:25px;
+}
+.container .cardsContainer {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.container .card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px;
+    border-radius: 30px !important;
+    border: none;
+    padding:20px;
+}
+.container .card .name {
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .property {
+    height: 40px;
+    background-color: #e3e8e7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container .card .property .propertyName {
+    width: 40%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container .card .property .propertyStar {
+    flex-grow: 1;
+    background-color: #e3e8e7;
+    width: 12%;
+}
+.container .card .property img {
+    width: 100%;
+    padding: 2px;
+}
+.ultimo {
+    border: orange 1px solid;
+    height: 100%;
+    width:100%;
+}
